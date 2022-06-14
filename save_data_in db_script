@@ -1,0 +1,105 @@
+import requests
+import pymysql
+
+
+def billing_script():
+    try:
+        #get the values from api resuest
+        response = requests.get("http://192.168.1.149:8000/wasa-amr/api/billing/3/308/all/2022-03-31/2022-04-30")
+        api_request_data=response.json()
+        api_data_value=api_request_data['data']
+
+        #connection
+        connection = pymysql.connect(host='localhost',port = 3306,user='root',password='',db='amr_billing')
+        cursor = connection.cursor()
+
+        #create table
+         #check table
+        create_table_query = "SELECT * FROM information_schema.tables WHERE table_schema = 'amr_billing'AND table_name = 'bills'"
+        create_table_query_status = cursor.execute(create_table_query)
+        
+
+        if(create_table_query_status):
+            print('table is there')
+            #insert data after checking the redundancy
+            try:
+                db_status_query = "SELECT 1 FROM bills LIMIT 1"
+                db_status = cursor.execute(db_status_query)
+
+                if(db_status == 0):
+                    for index in api_data_value:
+                        #print("hi")
+                        insert_data = "INSERT INTO bills (pk, device_id , address, account_no , road , house , present_reading, present_date, previous_reading, previou_date, amr_install_date, inspector_code) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+                        cursor.execute(insert_data, (index['pk'], index['device_id'],index['address'],  index['account_no'], index['road'], index['house'], index['present_reading'], index['present_date'], index['previous_reading'], index['previou_date'], index['amr_install_date'], index['inspector_code']))
+                        connection.commit()
+                else:
+                    for index in api_data_value:
+                        check_data = "SELECT * FROM bills WHERE account_no=%s AND present_reading=%s AND present_date =%s AND previous_reading=%s AND previou_date =%s"
+                        duplicate_check = cursor.execute(check_data, (index['account_no'],index['present_reading'], index['present_date'], index['previous_reading'], index['previou_date']))
+                        if(duplicate_check == 1):
+                            continue
+                        else:
+                            insert_data = "INSERT INTO bills (pk, device_id , address, account_no , road , house , present_reading, present_date, previous_reading, previou_date, amr_install_date, inspector_code) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+                            cursor.execute(insert_data, (index['pk'], index['device_id'],index['address'],  index['account_no'], index['road'], index['house'], index['present_reading'], index['present_date'], index['previous_reading'], index['previou_date'], index['amr_install_date'], index['inspector_code']))
+                            connection.commit()
+                            #print("Done")
+                success = "Device Information Saved Successfully!"
+                print(success)
+                return success
+            #database status exception
+            except Exception as e:
+                print(e)
+                return e
+            
+            
+        else:
+            print("create table new")
+            create_table_query = "CREATE TABLE bills (pk int, device_id varchar(255),address varchar(255),account_no varchar(255),road varchar(255), house varchar(255), present_reading varchar(255), present_date varchar(255), previous_reading varchar(255), previou_date varchar(255), amr_install_date varchar(255), inspector_code varchar(255), data_entry_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP)"
+            create_table_query_status = cursor.execute(create_table_query)
+            #print(create_table_query_status)
+            #insert data after checking the redundancy
+            try:
+                db_status_query = "SELECT 1 FROM bills LIMIT 1"
+                db_status = cursor.execute(db_status_query)
+
+                if(db_status == 0):
+                    for index in api_data_value:
+                        #print("hi")
+                        insert_data = "INSERT INTO bills (pk, device_id , address, account_no , road , house , present_reading, present_date, previous_reading, previou_date, amr_install_date, inspector_code) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+                        cursor.execute(insert_data, (index['pk'], index['device_id'],index['address'],  index['account_no'], index['road'], index['house'], index['present_reading'], index['present_date'], index['previous_reading'], index['previou_date'], index['amr_install_date'], index['inspector_code']))
+                        connection.commit()
+                else:
+                    for index in api_data_value:
+                        check_data = "SELECT * FROM bills WHERE account_no=%s AND present_reading=%s AND present_date =%s AND previous_reading=%s AND previou_date =%s"
+                        duplicate_check = cursor.execute(check_data, (index['account_no'],index['present_reading'], index['present_date'], index['previous_reading'], index['previou_date']))
+                        if(duplicate_check == 1):
+                            continue
+                        else:
+                            insert_data = "INSERT INTO bills (pk, device_id , address, account_no , road , house , present_reading, present_date, previous_reading, previou_date, amr_install_date, inspector_code) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+                            cursor.execute(insert_data, (index['pk'], index['device_id'],index['address'],  index['account_no'], index['road'], index['house'], index['present_reading'], index['present_date'], index['previous_reading'], index['previou_date'], index['amr_install_date'], index['inspector_code']))
+                            connection.commit()
+                            print("Done")
+                success = "Device Information Saved Successfully!"
+                print(success)
+                return success
+            #database status exception
+            except Exception as e:
+                print(e)
+                return e
+
+    #connection exceptuion
+    except Exception as e:
+        print(e)
+
+
+if __name__ == "__main__":
+    billing_script()
+
+
+
+
+
+
+
+
+
