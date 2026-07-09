@@ -487,7 +487,7 @@ print(n // 10 + n % 10)
 ```
 
 ## 14. Simple Interest
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given principal, rate, and time, calculate simple interest: P*R*T/100.
 
 **Input:** Three floats p, r, t.
@@ -522,7 +522,7 @@ print(f"{si:.2f}")
 ```
 
 ## 15. Rectangle Area Perimeter
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given length and width of a rectangle, print area and perimeter.
 
 **Input:** Two integers l and w.
