@@ -1,7 +1,7 @@
 These are original online-judge-style practice problems, not copied from any judge. Each includes a statement, sample tests, and a Python solution.
 
 ## 1. Sum of Two Numbers
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given two integers, print their sum.
 
 **Input:** Two integers a and b.
@@ -35,7 +35,7 @@ print(a + b)
 ```
 
 ## 2. Difference and Product
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given two integers, print their difference and product on separate lines.
 
 **Input:** Two integers a and b.
