@@ -330,7 +330,14 @@ Output:
 a, b, c = map(int, input().split())
 print(max(a, b, c))
 ```
-
+or 
+```python
+a, b, c = map(int, input().split())
+if a > b and a > c:
+    print(a)
+else:
+    print(b if b > c else c)
+```
 ## 10. Grade Calculator
 - [ ] Done
 **Problem Statement:** Given marks from 0 to 100, print grade: A for 80+, B for 70+, C for 60+, D for 50+, otherwise F.
