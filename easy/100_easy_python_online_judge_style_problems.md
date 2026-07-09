@@ -339,7 +339,7 @@ else:
     print(b if b > c else c)
 ```
 ## 10. Grade Calculator
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given marks from 0 to 100, print grade: A for 80+, B for 70+, C for 60+, D for 50+, otherwise F.
 
 **Input:** One integer mark.
@@ -382,7 +382,7 @@ else:
 ```
 
 ## 11. Leap Year
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given a year, determine if it is a leap year. A year is leap if divisible by 400 or divisible by 4 but not by 100.
 
 **Input:** One integer year.
