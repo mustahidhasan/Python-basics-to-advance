@@ -1,8 +1,7 @@
-# 100 Easy Python Online-Judge-Style Problems
-
 These are original online-judge-style practice problems, not copied from any judge. Each includes a statement, sample tests, and a Python solution.
 
-[] ## 1. Sum of Two Numbers
+## 1. Sum of Two Numbers
+- [ ] Done
 **Problem Statement:** Given two integers, print their sum.
 
 **Input:** Two integers a and b.
@@ -36,6 +35,7 @@ print(a + b)
 ```
 
 ## 2. Difference and Product
+- [ ] Done
 **Problem Statement:** Given two integers, print their difference and product on separate lines.
 
 **Input:** Two integers a and b.
@@ -72,6 +72,7 @@ print(a * b)
 ```
 
 ## 3. Circle Area
+- [ ] Done
 **Problem Statement:** Given the radius of a circle, print its area using pi = 3.1416. Print 2 digits after decimal.
 
 **Input:** One float r.
@@ -106,6 +107,7 @@ print(f"{area:.2f}")
 ```
 
 ## 4. Celsius to Fahrenheit
+- [ ] Done
 **Problem Statement:** Given a temperature in Celsius, convert it to Fahrenheit.
 
 **Input:** One float c.
@@ -140,6 +142,7 @@ print(f"{f:.2f}")
 ```
 
 ## 5. Swap Two Numbers
+- [ ] Done
 **Problem Statement:** Given two integers, print them after swapping their values.
 
 **Input:** Two integers a and b.
@@ -174,6 +177,7 @@ print(a, b)
 ```
 
 ## 6. Even or Odd
+- [ ] Done
 **Problem Statement:** Given an integer, determine whether it is even or odd.
 
 **Input:** One integer n.
@@ -207,6 +211,7 @@ print("Even" if n % 2 == 0 else "Odd")
 ```
 
 ## 7. Positive Negative Zero
+- [ ] Done
 **Problem Statement:** Given an integer, print whether it is Positive, Negative, or Zero.
 
 **Input:** One integer n.
@@ -254,6 +259,7 @@ else:
 ```
 
 ## 8. Maximum of Two
+- [ ] Done
 **Problem Statement:** Given two integers, print the larger one.
 
 **Input:** Two integers a and b.
@@ -287,6 +293,7 @@ print(max(a, b))
 ```
 
 ## 9. Maximum of Three
+- [ ] Done
 **Problem Statement:** Given three integers, print the largest one.
 
 **Input:** Three integers a, b, c.
@@ -320,6 +327,7 @@ print(max(a, b, c))
 ```
 
 ## 10. Grade Calculator
+- [ ] Done
 **Problem Statement:** Given marks from 0 to 100, print grade: A for 80+, B for 70+, C for 60+, D for 50+, otherwise F.
 
 **Input:** One integer mark.
@@ -362,6 +370,7 @@ else:
 ```
 
 ## 11. Leap Year
+- [ ] Done
 **Problem Statement:** Given a year, determine if it is a leap year. A year is leap if divisible by 400 or divisible by 4 but not by 100.
 
 **Input:** One integer year.
@@ -398,6 +407,7 @@ else:
 ```
 
 ## 12. Last Digit
+- [ ] Done
 **Problem Statement:** Given a non-negative integer, print its last digit.
 
 **Input:** One integer n.
@@ -431,6 +441,7 @@ print(n % 10)
 ```
 
 ## 13. Digit Sum Two
+- [ ] Done
 **Problem Statement:** Given a two-digit number, print the sum of its digits.
 
 **Input:** One two-digit integer n.
@@ -464,6 +475,7 @@ print(n // 10 + n % 10)
 ```
 
 ## 14. Simple Interest
+- [ ] Done
 **Problem Statement:** Given principal, rate, and time, calculate simple interest: P*R*T/100.
 
 **Input:** Three floats p, r, t.
@@ -498,6 +510,7 @@ print(f"{si:.2f}")
 ```
 
 ## 15. Rectangle Area Perimeter
+- [ ] Done
 **Problem Statement:** Given length and width of a rectangle, print area and perimeter.
 
 **Input:** Two integers l and w.
@@ -533,6 +546,7 @@ print(area, perimeter)
 ```
 
 ## 16. Absolute Value
+- [ ] Done
 **Problem Statement:** Given an integer, print its absolute value.
 
 **Input:** One integer n.
@@ -566,6 +580,7 @@ print(abs(n))
 ```
 
 ## 17. Voting Eligibility
+- [ ] Done
 **Problem Statement:** Given age, print Eligible if age is at least 18, otherwise Not Eligible.
 
 **Input:** One integer age.
@@ -599,6 +614,7 @@ print("Eligible" if age >= 18 else "Not Eligible")
 ```
 
 ## 18. Divisible by 5 and 11
+- [ ] Done
 **Problem Statement:** Given an integer, check whether it is divisible by both 5 and 11.
 
 **Input:** One integer n.
@@ -632,6 +648,7 @@ print("Yes" if n % 5 == 0 and n % 11 == 0 else "No")
 ```
 
 ## 19. Character Type
+- [ ] Done
 **Problem Statement:** Given a single English letter, print Vowel if it is a vowel, otherwise Consonant.
 
 **Input:** One character ch.
@@ -665,6 +682,7 @@ print("Vowel" if ch in "aeiou" else "Consonant")
 ```
 
 ## 20. Simple Calculator
+- [ ] Done
 **Problem Statement:** Given two integers and an operator +, -, *, or /, perform the operation. For division, print result with 2 digits after decimal.
 
 **Input:** Two integers a b and one operator op.
@@ -708,6 +726,7 @@ elif op == "/":
 ```
 
 ## 21. Print 1 to N
+- [ ] Done
 **Problem Statement:** Given n, print numbers from 1 to n separated by spaces.
 
 **Input:** One integer n.
@@ -741,6 +760,7 @@ print(*range(1, n + 1))
 ```
 
 ## 22. Print N to 1
+- [ ] Done
 **Problem Statement:** Given n, print numbers from n down to 1 separated by spaces.
 
 **Input:** One integer n.
@@ -774,6 +794,7 @@ print(*range(n, 0, -1))
 ```
 
 ## 23. Sum 1 to N
+- [ ] Done
 **Problem Statement:** Given n, print the sum of integers from 1 to n.
 
 **Input:** One integer n.
@@ -807,6 +828,7 @@ print(n * (n + 1) // 2)
 ```
 
 ## 24. Sum of Even Numbers
+- [ ] Done
 **Problem Statement:** Given n, print the sum of all even numbers from 1 to n.
 
 **Input:** One integer n.
@@ -843,6 +865,7 @@ print(total)
 ```
 
 ## 25. Factorial
+- [ ] Done
 **Problem Statement:** Given n, print n factorial.
 
 **Input:** One integer n.
@@ -879,6 +902,7 @@ print(ans)
 ```
 
 ## 26. Multiplication Table
+- [ ] Done
 **Problem Statement:** Given n, print the multiplication table of n from 1 to 10.
 
 **Input:** One integer n.
@@ -913,6 +937,7 @@ for i in range(1, 11):
 ```
 
 ## 27. Count Digits
+- [ ] Done
 **Problem Statement:** Given a non-negative integer, count how many digits it has.
 
 **Input:** One integer n.
@@ -946,6 +971,7 @@ print(len(n))
 ```
 
 ## 28. Sum of Digits
+- [ ] Done
 **Problem Statement:** Given a non-negative integer, print the sum of its digits.
 
 **Input:** One integer n.
@@ -979,6 +1005,7 @@ print(sum(int(ch) for ch in s))
 ```
 
 ## 29. Reverse Number
+- [ ] Done
 **Problem Statement:** Given a non-negative integer, print its digits in reverse order.
 
 **Input:** One integer n.
@@ -1013,6 +1040,7 @@ print(rev if rev else "0")
 ```
 
 ## 30. Palindrome Number
+- [ ] Done
 **Problem Statement:** Given a non-negative integer, check whether it reads the same backward.
 
 **Input:** One integer n.
@@ -1046,6 +1074,7 @@ print("Yes" if s == s[::-1] else "No")
 ```
 
 ## 31. Power
+- [ ] Done
 **Problem Statement:** Given integers a and b, print a raised to the power b.
 
 **Input:** Two integers a and b.
@@ -1079,6 +1108,7 @@ print(a ** b)
 ```
 
 ## 32. Prime Check
+- [ ] Done
 **Problem Statement:** Given n, determine whether it is prime.
 
 **Input:** One integer n.
@@ -1123,6 +1153,7 @@ else:
 ```
 
 ## 33. All Divisors
+- [ ] Done
 **Problem Statement:** Given n, print all positive divisors of n in increasing order.
 
 **Input:** One integer n.
@@ -1160,6 +1191,7 @@ print(*ans)
 ```
 
 ## 34. GCD
+- [ ] Done
 **Problem Statement:** Given two integers, print their greatest common divisor.
 
 **Input:** Two integers a and b.
@@ -1195,6 +1227,7 @@ print(math.gcd(a, b))
 ```
 
 ## 35. LCM
+- [ ] Done
 **Problem Statement:** Given two integers, print their least common multiple.
 
 **Input:** Two integers a and b.
@@ -1230,6 +1263,7 @@ print(a * b // math.gcd(a, b))
 ```
 
 ## 36. Fibonacci Nth
+- [ ] Done
 **Problem Statement:** Given n, print the nth Fibonacci number where F0=0 and F1=1.
 
 **Input:** One integer n.
@@ -1266,6 +1300,7 @@ print(a)
 ```
 
 ## 37. Fibonacci Series
+- [ ] Done
 **Problem Statement:** Given n, print first n Fibonacci numbers.
 
 **Input:** One integer n.
@@ -1304,6 +1339,7 @@ print(*ans)
 ```
 
 ## 38. Armstrong Number
+- [ ] Done
 **Problem Statement:** Given a number n, check whether it is an Armstrong number. Sum of each digit raised to number of digits should equal n.
 
 **Input:** One integer n.
@@ -1339,6 +1375,7 @@ print("Yes" if total == int(s) else "No")
 ```
 
 ## 39. Perfect Number
+- [ ] Done
 **Problem Statement:** Given n, check whether the sum of proper divisors of n equals n.
 
 **Input:** One integer n.
@@ -1381,6 +1418,7 @@ else:
 ```
 
 ## 40. Number of Factors
+- [ ] Done
 **Problem Statement:** Given n, print how many positive factors it has.
 
 **Input:** One integer n.
@@ -1420,6 +1458,7 @@ print(count)
 ```
 
 ## 41. Sum of Squares
+- [ ] Done
 **Problem Statement:** Given n, print 1^2 + 2^2 + ... + n^2.
 
 **Input:** One integer n.
@@ -1453,6 +1492,7 @@ print(n * (n + 1) * (2 * n + 1) // 6)
 ```
 
 ## 42. Odd Numbers in Range
+- [ ] Done
 **Problem Statement:** Given a and b, print all odd numbers between a and b inclusive.
 
 **Input:** Two integers a and b.
@@ -1487,6 +1527,7 @@ print(*ans if ans else ["Empty"])
 ```
 
 ## 43. Count Multiples
+- [ ] Done
 **Problem Statement:** Given n and k, count numbers from 1 to n divisible by k.
 
 **Input:** Two integers n and k.
@@ -1520,6 +1561,7 @@ print(n // k)
 ```
 
 ## 44. Average of N Numbers
+- [ ] Done
 **Problem Statement:** Given n numbers, print their average with 2 digits after decimal.
 
 **Input:** First line n. Second line n integers.
@@ -1556,6 +1598,7 @@ print(f"{sum(arr) / n:.2f}")
 ```
 
 ## 45. Minimum Coins
+- [ ] Done
 **Problem Statement:** Given an amount n, find the minimum number of coins using denominations 100, 50, 20, 10, 5, 2, 1.
 
 **Input:** One integer n.
@@ -1594,6 +1637,7 @@ print(count)
 ```
 
 ## 46. Array Sum
+- [ ] Done
 **Problem Statement:** Given an array of n integers, print the sum of all elements.
 
 **Input:** First line n. Second line n integers.
@@ -1630,6 +1674,7 @@ print(sum(arr))
 ```
 
 ## 47. Array Maximum
+- [ ] Done
 **Problem Statement:** Given an array of n integers, print the maximum element.
 
 **Input:** First line n. Second line n integers.
@@ -1666,6 +1711,7 @@ print(max(arr))
 ```
 
 ## 48. Array Minimum
+- [ ] Done
 **Problem Statement:** Given an array of n integers, print the minimum element.
 
 **Input:** First line n. Second line n integers.
@@ -1702,6 +1748,7 @@ print(min(arr))
 ```
 
 ## 49. Count Even Odd
+- [ ] Done
 **Problem Statement:** Given an array, count even and odd numbers.
 
 **Input:** First line n. Second line n integers.
@@ -1740,6 +1787,7 @@ print(even, odd)
 ```
 
 ## 50. Search Element
+- [ ] Done
 **Problem Statement:** Given an array and a target x, print Found if x exists, otherwise Not Found.
 
 **Input:** First line n. Second line n integers. Third line x.
@@ -1779,6 +1827,7 @@ print("Found" if x in arr else "Not Found")
 ```
 
 ## 51. First Position
+- [ ] Done
 **Problem Statement:** Given an array and target x, print the first 1-based position of x. If not found, print -1.
 
 **Input:** First line n. Second line n integers. Third line x.
@@ -1824,6 +1873,7 @@ print(pos)
 ```
 
 ## 52. Reverse Array
+- [ ] Done
 **Problem Statement:** Given an array, print it in reverse order.
 
 **Input:** First line n. Second line n integers.
@@ -1860,6 +1910,7 @@ print(*arr[::-1])
 ```
 
 ## 53. Sort Ascending
+- [ ] Done
 **Problem Statement:** Given an array, print it sorted in ascending order.
 
 **Input:** First line n. Second line n integers.
@@ -1897,6 +1948,7 @@ print(*arr)
 ```
 
 ## 54. Sort Descending
+- [ ] Done
 **Problem Statement:** Given an array, print it sorted in descending order.
 
 **Input:** First line n. Second line n integers.
@@ -1934,6 +1986,7 @@ print(*arr)
 ```
 
 ## 55. Second Largest
+- [ ] Done
 **Problem Statement:** Given an array, print the second largest distinct value. If it does not exist, print None.
 
 **Input:** First line n. Second line n integers.
@@ -1971,6 +2024,7 @@ print(unique[1] if len(unique) >= 2 else "None")
 ```
 
 ## 56. Remove Duplicates
+- [ ] Done
 **Problem Statement:** Given an array, print elements after removing duplicates while keeping first occurrence order.
 
 **Input:** First line n. Second line n integers.
@@ -2013,6 +2067,7 @@ print(*ans)
 ```
 
 ## 57. Frequency Count
+- [ ] Done
 **Problem Statement:** Given an array and a number x, count how many times x appears.
 
 **Input:** First line n. Second line n integers. Third line x.
@@ -2052,6 +2107,7 @@ print(arr.count(x))
 ```
 
 ## 58. Positive Negative Count
+- [ ] Done
 **Problem Statement:** Given an array, count positive, negative, and zero values.
 
 **Input:** First line n. Second line n integers.
@@ -2096,6 +2152,7 @@ print(pos, neg, zero)
 ```
 
 ## 59. Pair Sum
+- [ ] Done
 **Problem Statement:** Given an array and target k, determine whether any two different elements sum to k.
 
 **Input:** First line n. Second line n integers. Third line k.
@@ -2144,6 +2201,7 @@ print("Yes" if ok else "No")
 ```
 
 ## 60. Prefix Sum Queries
+- [ ] Done
 **Problem Statement:** Given an array and q queries, each query l r asks for sum from l to r using 1-based indexing.
 
 **Input:** First line n. Second line n integers. Third line q. Next q lines contain l r.
@@ -2181,6 +2239,7 @@ for _ in range(q):
 ```
 
 ## 61. Rotate Right Once
+- [ ] Done
 **Problem Statement:** Given an array, rotate it right by one position.
 
 **Input:** First line n. Second line n integers.
@@ -2219,6 +2278,7 @@ print(*arr)
 ```
 
 ## 62. Rotate Left K
+- [ ] Done
 **Problem Statement:** Given an array and k, rotate the array left by k positions.
 
 **Input:** First line n. Second line n integers. Third line k.
@@ -2259,6 +2319,7 @@ print(*arr)
 ```
 
 ## 63. Merge Two Arrays
+- [ ] Done
 **Problem Statement:** Given two arrays, merge them and print the result.
 
 **Input:** First line n. Second line n integers. Third line m. Fourth line m integers.
@@ -2301,6 +2362,7 @@ print(*(a + b))
 ```
 
 ## 64. Intersection Unique
+- [ ] Done
 **Problem Statement:** Given two arrays, print common distinct elements in increasing order. If none, print Empty.
 
 **Input:** First line n. Second line n integers. Third line m. Fourth line m integers.
@@ -2345,6 +2407,7 @@ print(*ans if ans else ["Empty"])
 ```
 
 ## 65. Missing Number
+- [ ] Done
 **Problem Statement:** Numbers from 1 to n are given with one number missing. Find the missing number.
 
 **Input:** First line n. Second line n-1 integers.
@@ -2382,6 +2445,7 @@ print(expected - sum(arr))
 ```
 
 ## 66. Maximum Subarray Easy
+- [ ] Done
 **Problem Statement:** Given an array, find the maximum sum of any non-empty contiguous subarray.
 
 **Input:** First line n. Second line n integers.
@@ -2424,6 +2488,7 @@ print(best)
 ```
 
 ## 67. Count Greater Than X
+- [ ] Done
 **Problem Statement:** Given an array and x, count how many elements are greater than x.
 
 **Input:** First line n. Second line n integers. Third line x.
@@ -2463,6 +2528,7 @@ print(sum(1 for v in arr if v > x))
 ```
 
 ## 68. Replace Negative With Zero
+- [ ] Done
 **Problem Statement:** Given an array, replace every negative number with 0 and print the array.
 
 **Input:** First line n. Second line n integers.
@@ -2500,6 +2566,7 @@ print(*arr)
 ```
 
 ## 69. Array Is Sorted
+- [ ] Done
 **Problem Statement:** Given an array, check whether it is sorted in non-decreasing order.
 
 **Input:** First line n. Second line n integers.
@@ -2536,6 +2603,7 @@ print("Yes" if arr == sorted(arr) else "No")
 ```
 
 ## 70. Move Zeros End
+- [ ] Done
 **Problem Statement:** Given an array, move all zeros to the end while keeping order of non-zero elements.
 
 **Input:** First line n. Second line n integers.
@@ -2574,6 +2642,7 @@ print(*(non_zero + zeros))
 ```
 
 ## 71. String Length
+- [ ] Done
 **Problem Statement:** Given a string, print its length.
 
 **Input:** One line string s.
@@ -2607,6 +2676,7 @@ print(len(s))
 ```
 
 ## 72. Reverse String
+- [ ] Done
 **Problem Statement:** Given a string, print it in reverse.
 
 **Input:** One line string s.
@@ -2640,6 +2710,7 @@ print(s[::-1])
 ```
 
 ## 73. Palindrome String
+- [ ] Done
 **Problem Statement:** Given a string, check whether it is a palindrome.
 
 **Input:** One line string s.
@@ -2673,6 +2744,7 @@ print("Yes" if s == s[::-1] else "No")
 ```
 
 ## 74. Count Vowels
+- [ ] Done
 **Problem Statement:** Given a string, count vowels a, e, i, o, u. Ignore case.
 
 **Input:** One line string s.
@@ -2707,6 +2779,7 @@ print(count)
 ```
 
 ## 75. Count Words
+- [ ] Done
 **Problem Statement:** Given a sentence, count how many words it contains.
 
 **Input:** One line sentence.
@@ -2740,6 +2813,7 @@ print(0 if s == "" else len(s.split()))
 ```
 
 ## 76. Uppercase String
+- [ ] Done
 **Problem Statement:** Given a string, convert it to uppercase.
 
 **Input:** One line string s.
@@ -2773,6 +2847,7 @@ print(s.upper())
 ```
 
 ## 77. Lowercase String
+- [ ] Done
 **Problem Statement:** Given a string, convert it to lowercase.
 
 **Input:** One line string s.
@@ -2806,6 +2881,7 @@ print(s.lower())
 ```
 
 ## 78. Count Character
+- [ ] Done
 **Problem Statement:** Given a string and a character, count how many times the character appears.
 
 **Input:** First line string s. Second line character ch.
@@ -2842,6 +2918,7 @@ print(s.count(ch))
 ```
 
 ## 79. Remove Spaces
+- [ ] Done
 **Problem Statement:** Given a string, remove all spaces from it.
 
 **Input:** One line string s.
@@ -2875,6 +2952,7 @@ print(s.replace(" ", ""))
 ```
 
 ## 80. First Non-Repeating Character
+- [ ] Done
 **Problem Statement:** Given a string, print the first character that appears exactly once. If none, print None.
 
 **Input:** One line string s.
@@ -2917,6 +2995,7 @@ print(ans)
 ```
 
 ## 81. Anagram Check
+- [ ] Done
 **Problem Statement:** Given two strings, check whether they are anagrams. Ignore spaces and case.
 
 **Input:** Two lines, strings a and b.
@@ -2953,6 +3032,7 @@ print("Yes" if sorted(a) == sorted(b) else "No")
 ```
 
 ## 82. Digit Count in String
+- [ ] Done
 **Problem Statement:** Given a string, count how many characters are digits.
 
 **Input:** One line string s.
@@ -2986,6 +3066,7 @@ print(sum(1 for ch in s if ch.isdigit()))
 ```
 
 ## 83. Alphabet Count
+- [ ] Done
 **Problem Statement:** Given a string, count how many characters are English letters.
 
 **Input:** One line string s.
@@ -3019,6 +3100,7 @@ print(sum(1 for ch in s if ch.isalpha()))
 ```
 
 ## 84. Capitalize Words
+- [ ] Done
 **Problem Statement:** Given a sentence, capitalize the first letter of every word.
 
 **Input:** One line sentence.
@@ -3052,6 +3134,7 @@ print(s.title())
 ```
 
 ## 85. Replace Character
+- [ ] Done
 **Problem Statement:** Given a string, a character old, and a character new, replace all old with new.
 
 **Input:** First line string s. Second line old new.
@@ -3088,6 +3171,7 @@ print(s.replace(old, new))
 ```
 
 ## 86. Longest Word
+- [ ] Done
 **Problem Statement:** Given a sentence, print the longest word. If multiple, print the first one.
 
 **Input:** One line sentence.
@@ -3125,6 +3209,7 @@ print(longest)
 ```
 
 ## 87. String Starts With
+- [ ] Done
 **Problem Statement:** Given two strings s and prefix, check whether s starts with prefix.
 
 **Input:** First line s. Second line prefix.
@@ -3161,6 +3246,7 @@ print("Yes" if s.startswith(prefix) else "No")
 ```
 
 ## 88. String Ends With
+- [ ] Done
 **Problem Statement:** Given two strings s and suffix, check whether s ends with suffix.
 
 **Input:** First line s. Second line suffix.
@@ -3197,6 +3283,7 @@ print("Yes" if s.endswith(suffix) else "No")
 ```
 
 ## 89. Remove Duplicate Characters
+- [ ] Done
 **Problem Statement:** Given a string, remove duplicate characters while keeping first occurrence order.
 
 **Input:** One line string s.
@@ -3236,6 +3323,7 @@ print("".join(ans))
 ```
 
 ## 90. Toggle Case
+- [ ] Done
 **Problem Statement:** Given a string, convert lowercase letters to uppercase and uppercase letters to lowercase.
 
 **Input:** One line string s.
@@ -3269,6 +3357,7 @@ print(s.swapcase())
 ```
 
 ## 91. Right Triangle Stars
+- [ ] Done
 **Problem Statement:** Given n, print a right triangle of stars with n rows.
 
 **Input:** One integer n.
@@ -3297,6 +3386,7 @@ for i in range(1, n + 1):
 ```
 
 ## 92. Square Stars
+- [ ] Done
 **Problem Statement:** Given n, print an n by n square of stars.
 
 **Input:** One integer n.
@@ -3324,6 +3414,7 @@ for _ in range(n):
 ```
 
 ## 93. Number Triangle
+- [ ] Done
 **Problem Statement:** Given n, print rows where row i contains numbers from 1 to i.
 
 **Input:** One integer n.
@@ -3352,6 +3443,7 @@ for i in range(1, n + 1):
 ```
 
 ## 94. Inverted Triangle Stars
+- [ ] Done
 **Problem Statement:** Given n, print an inverted right triangle of stars.
 
 **Input:** One integer n.
@@ -3380,6 +3472,7 @@ for i in range(n, 0, -1):
 ```
 
 ## 95. Dictionary Frequency
+- [ ] Done
 **Problem Statement:** Given n words, print each distinct word and its frequency in first occurrence order.
 
 **Input:** First line n. Next n lines contain one word.
@@ -3421,6 +3514,7 @@ for word in order:
 ```
 
 ## 96. Student Pass Count
+- [ ] Done
 **Problem Statement:** Given marks of n students, count how many passed. Passing mark is 40.
 
 **Input:** First line n. Second line n marks.
@@ -3457,6 +3551,7 @@ print(sum(1 for m in marks if m >= 40))
 ```
 
 ## 97. Simple Login
+- [ ] Done
 **Problem Statement:** Given username and password, print Login Successful if username is admin and password is 1234, otherwise Login Failed.
 
 **Input:** Two lines: username and password.
@@ -3497,6 +3592,7 @@ else:
 ```
 
 ## 98. BMI Category
+- [ ] Done
 **Problem Statement:** Given weight in kg and height in meters, calculate BMI and print category: Underweight if <18.5, Normal if <25, Overweight if <30, otherwise Obese.
 
 **Input:** Two floats weight and height.
@@ -3539,6 +3635,7 @@ else:
 ```
 
 ## 99. Simple Password Strength
+- [ ] Done
 **Problem Statement:** Given a password, print Strong if it has at least 8 characters, at least one digit, and at least one uppercase letter. Otherwise print Weak.
 
 **Input:** One line password.
@@ -3578,6 +3675,7 @@ else:
 ```
 
 ## 100. Matrix Sum
+- [ ] Done
 **Problem Statement:** Given a matrix with r rows and c columns, print the sum of all elements.
 
 **Input:** First line r c. Next r lines contain c integers.
