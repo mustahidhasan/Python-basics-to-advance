@@ -142,7 +142,7 @@ print(f"{f:.2f}")
 ```
 
 ## 5. Swap Two Numbers
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given two integers, print them after swapping their values.
 
 **Input:** Two integers a and b.
@@ -177,7 +177,7 @@ print(a, b)
 ```
 
 ## 6. Even or Odd
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given an integer, determine whether it is even or odd.
 
 **Input:** One integer n.
