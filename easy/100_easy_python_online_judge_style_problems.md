@@ -72,7 +72,7 @@ print(a * b)
 ```
 
 ## 3. Circle Area
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given the radius of a circle, print its area using pi = 3.1416. Print 2 digits after decimal.
 
 **Input:** One float r.
@@ -107,7 +107,7 @@ print(f"{area:.2f}")
 ```
 
 ## 4. Celsius to Fahrenheit
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given a temperature in Celsius, convert it to Fahrenheit.
 
 **Input:** One float c.
