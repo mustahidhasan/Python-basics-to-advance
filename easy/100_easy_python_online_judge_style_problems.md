@@ -2,7 +2,7 @@
 
 These are original online-judge-style practice problems, not copied from any judge. Each includes a statement, sample tests, and a Python solution.
 
-## 1. Sum of Two Numbers
+[] ## 1. Sum of Two Numbers
 **Problem Statement:** Given two integers, print their sum.
 
 **Input:** Two integers a and b.
