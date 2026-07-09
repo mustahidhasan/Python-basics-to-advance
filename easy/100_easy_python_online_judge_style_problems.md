@@ -211,7 +211,7 @@ print("Even" if n % 2 == 0 else "Odd")
 ```
 
 ## 7. Positive Negative Zero
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given an integer, print whether it is Positive, Negative, or Zero.
 
 **Input:** One integer n.
@@ -259,7 +259,7 @@ else:
 ```
 
 ## 8. Maximum of Two
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given two integers, print the larger one.
 
 **Input:** Two integers a and b.
@@ -290,6 +290,11 @@ Output:
 ```python
 a, b = map(int, input().split())
 print(max(a, b))
+```
+or 
+``` python
+a, b = map(int, input().split())
+print(a if a > b else b)
 ```
 
 ## 9. Maximum of Three
