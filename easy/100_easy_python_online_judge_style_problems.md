@@ -419,7 +419,7 @@ else:
 ```
 
 ## 12. Last Digit
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given a non-negative integer, print its last digit.
 
 **Input:** One integer n.
@@ -453,7 +453,7 @@ print(n % 10)
 ```
 
 ## 13. Digit Sum Two
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given a two-digit number, print the sum of its digits.
 
 **Input:** One two-digit integer n.
