@@ -558,7 +558,7 @@ print(area, perimeter)
 ```
 
 ## 16. Absolute Value
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given an integer, print its absolute value.
 
 **Input:** One integer n.
@@ -590,9 +590,14 @@ Output:
 n = int(input())
 print(abs(n))
 ```
+or 
+```python
+n = int(input())
+print(n if n >= 0 else -(n))
+```
 
 ## 17. Voting Eligibility
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given age, print Eligible if age is at least 18, otherwise Not Eligible.
 
 **Input:** One integer age.
@@ -626,7 +631,7 @@ print("Eligible" if age >= 18 else "Not Eligible")
 ```
 
 ## 18. Divisible by 5 and 11
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given an integer, check whether it is divisible by both 5 and 11.
 
 **Input:** One integer n.
@@ -660,7 +665,7 @@ print("Yes" if n % 5 == 0 and n % 11 == 0 else "No")
 ```
 
 ## 19. Character Type
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given a single English letter, print Vowel if it is a vowel, otherwise Consonant.
 
 **Input:** One character ch.
@@ -691,6 +696,7 @@ Consonant
 ```python
 ch = input().strip().lower()
 print("Vowel" if ch in "aeiou" else "Consonant")
+print("Vowel" if ch in "aeiou" or ch in "AEIOU" else "Consonant") # better
 ```
 
 ## 20. Simple Calculator
