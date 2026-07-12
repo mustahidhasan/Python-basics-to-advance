@@ -955,7 +955,7 @@ for i in range(1, 11):
 ```
 
 ## 27. Count Digits
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given a non-negative integer, count how many digits it has.
 
 **Input:** One integer n.
@@ -986,6 +986,17 @@ Output:
 ```python
 n = input().strip()
 print(len(n))
+```
+or
+```python
+def count_degits(n):
+    count = 0
+    if n == 1: count =1
+    while n > 0:
+        n = n // 10
+        count += 1
+    return count
+print(count_degits(n))
 ```
 
 ## 28. Sum of Digits
