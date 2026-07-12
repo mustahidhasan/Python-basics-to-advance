@@ -744,7 +744,7 @@ elif op == "/":
 ```
 
 ## 21. Print 1 to N
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given n, print numbers from 1 to n separated by spaces.
 
 **Input:** One integer n.
@@ -778,7 +778,7 @@ print(*range(1, n + 1))
 ```
 
 ## 22. Print N to 1
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given n, print numbers from n down to 1 separated by spaces.
 
 **Input:** One integer n.
