@@ -846,7 +846,7 @@ print(n * (n + 1) // 2)
 ```
 
 ## 24. Sum of Even Numbers
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given n, print the sum of all even numbers from 1 to n.
 
 **Input:** One integer n.
