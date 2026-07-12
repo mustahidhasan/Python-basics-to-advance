@@ -812,7 +812,7 @@ print(*range(n, 0, -1))
 ```
 
 ## 23. Sum 1 to N
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given n, print the sum of integers from 1 to n.
 
 **Input:** One integer n.
