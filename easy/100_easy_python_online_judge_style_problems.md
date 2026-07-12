@@ -883,7 +883,7 @@ print(total)
 ```
 
 ## 25. Factorial
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given n, print n factorial.
 
 **Input:** One integer n.
@@ -920,7 +920,7 @@ print(ans)
 ```
 
 ## 26. Multiplication Table
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given n, print the multiplication table of n from 1 to 10.
 
 **Input:** One integer n.
