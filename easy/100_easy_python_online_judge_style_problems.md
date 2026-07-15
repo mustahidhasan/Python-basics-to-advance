@@ -1000,7 +1000,7 @@ print(count_degits(n))
 ```
 
 ## 28. Sum of Digits
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given a non-negative integer, print the sum of its digits.
 
 **Input:** One integer n.
@@ -1032,9 +1032,18 @@ Output:
 s = input().strip()
 print(sum(int(ch) for ch in s))
 ```
+or 
+```python
+n = int(input())
+sum = 0
+while n > 0:
+    sum += n%10
+    n = n // 10
+print(sum)
+```
 
 ## 29. Reverse Number
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given a non-negative integer, print its digits in reverse order.
 
 **Input:** One integer n.
@@ -1069,7 +1078,7 @@ print(rev if rev else "0")
 ```
 
 ## 30. Palindrome Number
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given a non-negative integer, check whether it reads the same backward.
 
 **Input:** One integer n.
