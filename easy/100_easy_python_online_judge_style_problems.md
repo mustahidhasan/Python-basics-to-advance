@@ -1112,7 +1112,7 @@ print("Yes" if s == s[::-1] else "No")
 ```
 
 ## 31. Power
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given integers a and b, print a raised to the power b.
 
 **Input:** Two integers a and b.
@@ -1146,7 +1146,7 @@ print(a ** b)
 ```
 
 ## 32. Prime Check
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given n, determine whether it is prime.
 
 **Input:** One integer n.
