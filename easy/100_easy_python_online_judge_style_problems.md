@@ -1239,7 +1239,7 @@ print()
 ```
 
 ## 34. GCD
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given two integers, print their greatest common divisor.
 
 **Input:** Two integers a and b.
@@ -1273,7 +1273,14 @@ import math
 a, b = map(int, input().split())
 print(math.gcd(a, b))
 ```
+or
 
+```python
+a, b = map(int, input().split())
+while b != 0:
+    a , b = b, a%b
+print(a)
+```
 ## 35. LCM
 - [ ] Done
 **Problem Statement:** Given two integers, print their least common multiple.
