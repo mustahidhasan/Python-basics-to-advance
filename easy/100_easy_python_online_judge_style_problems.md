@@ -1282,7 +1282,7 @@ while b != 0:
 print(a)
 ```
 ## 35. LCM
-- [ ] Done
+- [x] Done
 **Problem Statement:** Given two integers, print their least common multiple.
 
 **Input:** Two integers a and b.
@@ -1315,6 +1315,14 @@ import math
 
 a, b = map(int, input().split())
 print(a * b // math.gcd(a, b))
+```
+or 
+```python
+a, b = map(int, input().split())
+multiple = a * b
+while b != 0:
+    a, b = b, a % b
+print(int(multiple/ a))
 ```
 
 ## 36. Fibonacci Nth
