@@ -18,7 +18,7 @@ def pro_fibonacci(n):
     left, right = 0, 1
     for _ in range(n):
         print(left, end=", ")
-        left, right = right, left + right
+        left, right = right, left + right # right becomes left , sum of left right becomes the new right
         
 
 if __name__ == "__main__":
