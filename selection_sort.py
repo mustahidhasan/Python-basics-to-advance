@@ -1,13 +1,29 @@
 # perform the selection sort both ascending and descending
 #BASIC SOLUTION:
-#Ascending:
-# 1. 
-# 2. 
-# 3. 
-# 4.
+#Ascending: [Replacement method]
+# 1. Go throguh the whole array till the last item
+# 2. compare the current value with all the next values if its less than it or not
+# 3. if found a less value put the less value in the current position 
+# 4. Do this operation till the last element of the array
 def ascending_sort_selection_basic(values, n):
-    pass
-#Descending:
+    # outer loop for traversing through the whole array , n - 1 for not going out of index
+    for idx in range(n - 1):
+        min_index = idx # make the current index as the minimum index assume it.
+        # inner loop for comparison traverse, from the next value of current index till the last element of the array. loop will start from next value of i
+        for jdx in range(idx+1, n):
+            if values[jdx] < values[min_index]: # if the current value of inner loop is less than the assumed min index of array
+                min_index = jdx # as min value found the previous assumed min index updated with the current one of jdx. here it finds the most minimum value present in the whole array over inner loop traverse and minindex update
+        min_value = values.pop(min_index) # kick the most minimum value out of the current array
+        
+        values.insert(idx,min_value) # current outer loop actual current position of the array gets the inner found miminum value
+    return values
+
+
+
+
+
+
+#Descending[Replaceing Method]:
 # 1. 
 # 2. 
 # 3. 
@@ -36,7 +52,7 @@ def descending_sort_selection(values, n):
 
 
 if __name__ == "__main__":
-    values = [12, 4, 5, 9, 0, 2, 100]
+    values = [12, 5, 4, 9, 0, 2, 100]
     n = len(values) # for the breaking logic of the loops 
     print("Ascending Sort with Selection Sort(BASIC)", ascending_sort_selection_basic(values, n))
     # print("Descending Sort with Selection Sort(BASIC)", descending_sort_selection_basic(values, n))
