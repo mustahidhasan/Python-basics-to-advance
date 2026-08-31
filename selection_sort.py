@@ -62,12 +62,19 @@ def ascending_sort_selection(values, n):
 
     
 #Descending:
-# 1. 
-# 2. 
-# 3. 
-# 4.
+# 1. go through the whole array till n -1
+# 2. traverse each element of the araaay till the last one 
+# 3. if current value is grater than the other one swap the positions
+# 4. do it will the last element
 def descending_sort_selection(values, n):
-    pass
+    for idx in range(n - 1): # till the last element not out of index
+        max_index = idx # assume current one is the max index
+        for jdx in range(idx, n): # traverser innner loop form the next element of ith elemnt till the last one
+            if values[jdx] > values[max_index]: # if the value is greater than the current max index
+                max_index = jdx # update the max index with the found one
+        values[idx], values[max_index] = values[max_index], values[idx] # swap the values of current ith index with the max index value, thus the most highr value comes in the front
+    return values
+
 
 
 if __name__ == "__main__":
@@ -77,4 +84,4 @@ if __name__ == "__main__":
     print("Ascending Sort with Selection Sort(BASIC)", ascending_sort_selection_basic(values, n))
     print("Descending Sort with Selection Sort(BASIC)", descending_sort_selection_basic(values, n))
     print("Ascending Sort with Selection Sort(OPTIMIZED)", ascending_sort_selection(values, n))
-    # print("Descending Sort with Selection Sort(OPTIMIZED)", descending_sort_selection(values, n))
+    print("Descending Sort with Selection Sort(OPTIMIZED)", descending_sort_selection(values, n))
