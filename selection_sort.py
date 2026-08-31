@@ -24,12 +24,21 @@ def ascending_sort_selection_basic(values, n):
 
 
 #Descending[Replaceing Method]:
-# 1. 
-# 2. 
-# 3. 
-# 4.
+# 1. go throguh the array from till the last element of the array
+# 2. compare the current value with the next values, till the last one
+# 3. if the current one is greater than the next ones, replace the greater one to the ith index position
+# 4. do this till the last element
 def descending_sort_selection_basic(values, n):
-    pass
+    # outer loop till the last element, n-1 for not going out of index
+    for idx in range(n-1): 
+        max_index = idx # assume the ith location index as the mix index for further uupdate
+        # innner loop from the next element of current index of i and till the last element of the array
+        for jdx in range(idx+1, n):
+            if values[jdx] > values[max_index]: # if the valued of j indexes are somehow greater than the current assumed max index
+                max_index = jdx # update the max index with the current greater value index
+        max_value = values.pop(max_index) # removes the max element from the array 
+        values.insert(idx, max_value)
+    return values
 
 
 
@@ -53,8 +62,9 @@ def descending_sort_selection(values, n):
 
 if __name__ == "__main__":
     values = [12, 5, 4, 9, 0, 2, 100]
+    print("Main Array: ", values)
     n = len(values) # for the breaking logic of the loops 
     print("Ascending Sort with Selection Sort(BASIC)", ascending_sort_selection_basic(values, n))
-    # print("Descending Sort with Selection Sort(BASIC)", descending_sort_selection_basic(values, n))
+    print("Descending Sort with Selection Sort(BASIC)", descending_sort_selection_basic(values, n))
     # print("Ascending Sort with Selection Sort(OPTIMIZED)", ascending_sort_selection(values, n))
     # print("Descending Sort with Selection Sort(OPTIMIZED)", descending_sort_selection(values, n))
