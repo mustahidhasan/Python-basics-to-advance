@@ -45,12 +45,22 @@ def descending_sort_selection_basic(values, n):
 
 # Optimized Solution:
 #Ascending:
-# 1. 
-# 2. 
-# 3. 
-# 4.
+# 1. go through the whole array till the last element  outer loop, also make an assumption of min indexed value as the current ith index
+# 2. compare the current index value with all the values in the array on each run inner loop
+# 3. compare current value index with min_index value if its less in comparing upcoming values update the min_index
+# 4. swap the current ith value with the updated min index value 
 def ascending_sort_selection(values, n):
-    pass
+    for idx in range(n-1): # outer loop till the before the last element solves out of index
+        min_index = idx # assume the ith index is the min index value
+        for jdx in range(idx, n):
+            if values[jdx] < values[min_index]: # if the values are less than the min index flag update the minindex
+                min_index = jdx # updates the min index
+        values[idx], values[min_index] = values[min_index], values[idx] # swaps the value of current ith index with the minindexed value, thus we gets the less selection the lowes one gets in the intial position faster
+    return values
+
+
+
+    
 #Descending:
 # 1. 
 # 2. 
@@ -66,5 +76,5 @@ if __name__ == "__main__":
     n = len(values) # for the breaking logic of the loops 
     print("Ascending Sort with Selection Sort(BASIC)", ascending_sort_selection_basic(values, n))
     print("Descending Sort with Selection Sort(BASIC)", descending_sort_selection_basic(values, n))
-    # print("Ascending Sort with Selection Sort(OPTIMIZED)", ascending_sort_selection(values, n))
+    print("Ascending Sort with Selection Sort(OPTIMIZED)", ascending_sort_selection(values, n))
     # print("Descending Sort with Selection Sort(OPTIMIZED)", descending_sort_selection(values, n))
