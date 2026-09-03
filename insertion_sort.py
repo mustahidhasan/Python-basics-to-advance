@@ -30,13 +30,27 @@ def insertion_sort_assending_basic(values, n):
 
 
 #Descending:
-# 1. 
-# 2. 
-# 3. 
-# 4. 
+# 1. Outer loop goest from the 1th element and skips the 0th one and goes till the last one, flag the current index and current value gets popped out for leaveigng a place to set the sorted value
+# 2. innser loop moves backward, till 0 each time, starts form the previous value of ith value, backward because it makers easier to insert the sorted value in actual position
+# 3. if the current ith value is height that the other one in the inner loop then make this one the insertion index and put the ith value there 
+# 4. DO it for all the values in the array
 
 def insertion_sort_descending_basic(values, n):
-    pass
+    # outer loop from 1th element till the last one, keeping the previous value of ith one always empty to get the sorted one to be inserted
+    for idx in range(1,n):
+        insert_index = idx # current index to be get inserted with sorted value
+
+        current_value = values.pop(idx) # pops the current value to make an empty palce to insert it in its appropiate position
+
+        #inner loop backward , from the previous element of the outher loop
+        for jdx in range(idx - 1, -1, -1):
+            if values[jdx] < current_value: # if the current value is heigher that means this becomes the updated one to be inserted on
+                insert_index = jdx # that means there are more heigher value and that insertion point
+        values.insert(insert_index, current_value)
+    return values
+
+
+
 
 # Optimised way: Copy past mehthod.
 #ASSENDING:
