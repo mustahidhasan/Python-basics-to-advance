@@ -82,13 +82,30 @@ def insertion_sort_assending_optimized(values, n):
 
 
 #Descending:
-# 1. 
-# 2. 
-# 3. 
-# 4. 
+# 1. Outer loop one step ahead of the array element 1 till n 
+# 2. flag inseriton and current value flags each time the outer loop runs
+# 3. inner loop from the 1st to the last one , i -1, backward, till the last one
+# 4. if the jdx value inner loops each value in less that the current value that means there are decending values to be sorted
+# 5. make a place for the current inner loop sorted to be value making jdx + 1 having the currend jdx vlaue
+# 6. make the inseting index flag to the current one to make room for the value to be sorted
+# 7. if there is no vlaue in jdx less than the current one break the loop to reduce extra traversal
+# 8. place the inserting index with the current vlaue , do it till the array ends
 
 def insertion_sort_descending_optimized(values, n):
-    pass
+
+    # idx for 1 to n for skipping the each one
+    for idx in range(1,n):
+        insert_index = idx # flag index each time with current one for insertion point
+        current_value = values[idx] # flag the ith value for plaicng in the inseriton point after being sorted
+        # inner loop backward, one step before the idx, till the last one
+        for jdx in range(idx - 1, -1, -1):
+            if values[jdx] < current_value: # if the current value is greater than the jdx there is room for sorting in decending order 
+                values[jdx + 1] = values[jdx] # make room for the sorted value by shifting current value on the next one 
+                insert_index = jdx # make the new position as the assertion point as values to be sorted found
+            else:
+                break # if no values less than the current one, then its sorted in left, no need to look them repetadly
+        values[insert_index] = current_value # put the sorted value in the inserting point
+    return values
 
 if __name__ == "__main__":
     values = [5, 2, 0, 19, 100, 55, 30, 10, 20]
@@ -96,4 +113,4 @@ if __name__ == "__main__":
     print("Insertion Sort Ascending: (BASIC)", insertion_sort_assending_basic(values, n))
     print("Insertion Sort Descending (BASIC): ", insertion_sort_descending_basic(values, n))
     print("Insertion Sort Ascending: ", insertion_sort_assending_optimized(values, n))
-    # print("Insertion Sort Descending: ", insertion_sort_descending_optimized(values, n))
+    print("Insertion Sort Descending: ", insertion_sort_descending_optimized(values, n))
