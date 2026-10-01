@@ -9,7 +9,7 @@ def partition_ascending(values, low, high):
     piviot = values[high]
     idx = low - 1
     for jdx in range(low, high):
-        if values[jdx] <= piviot:
+        if values[jdx] <= piviot: # decides whether it should be ascending or descending 
             idx += 1
             values[idx], values[jdx] = values[jdx], values[idx]
     values[idx + 1], values[high] = values[high], values[idx + 1]
