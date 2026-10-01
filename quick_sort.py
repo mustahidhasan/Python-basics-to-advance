@@ -26,10 +26,25 @@ def quick_sort_ascending(values, low = 0, high = None):
     return values
 
 def partition_descending(values, low, high):
-    pass
+    piviot = values[high] # assumes the hight position value as piviot 
+    idx = low - 1 # goes one step behind to traverse the whole array
+    for jdx in range(low, high):
+        if values[jdx] >= piviot: # puts the hight values in the left , descending order
+            idx += 1 # increae the the idex to one index
+            values[idx], values[jdx] = values[jdx], values[idx]
+    values[idx + 1], values[high] = values[high], values[idx + 1] # swaps woth high value, idx + 1 cox we started one step behind
+    return idx + 1
+
 
 def quick_sort_descending(values, low = 0, high = None):
-    pass
+    if high is None:
+        high = len(values) -1 # to avoid index out
+
+    if low < high:
+        piviot = partition_descending(values, low, high)
+        quick_sort_descending(values, low, piviot - 1) # left side of the array to be sorted 
+        quick_sort_descending(values, piviot + 1, high) # right side of the array to be sorted
+    return values
 
 if __name__ == "__main__":
     values = [4, 3, 60, 9, 100, 40, 30, 10, 20, 5]
