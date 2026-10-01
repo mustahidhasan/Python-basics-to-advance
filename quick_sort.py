@@ -25,6 +25,11 @@ def quick_sort_ascending(values, low = 0, high = None):
         quick_sort_ascending(values, piviot + 1, high) # handles the piviot right end breaking logic, sorts entire right sub array 
     return values
 
+def partition_descending(values, low, high):
+    pass
+
+def quick_sort_descending(values, low = 0, high = None):
+    pass
 
 if __name__ == "__main__":
     values = [4, 3, 60, 9, 100, 40, 30, 10, 20, 5]
@@ -32,3 +37,4 @@ if __name__ == "__main__":
     high = None
 
     print("Ascending Order:", quick_sort_ascending(values,low, high))
+    print("descending Order:", quick_sort_descending(values, low, high))
